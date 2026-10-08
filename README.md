@@ -96,7 +96,7 @@ bash scripts/smoke-test.sh http://localhost:3000
 4. Conectarse e instalar Docker:
    ```bash
    ssh -i mi-llave.pem ubuntu@<IP_EC2>
-   curl -fsSL https://raw.githubusercontent.com/<usuario>/<repo>/main/scripts/setup-ec2.sh | bash
+   curl -fsSL https://raw.githubusercontent.com/2023371111-collab/mi-webapp/main/scripts/setup-ec2.sh | bash
    exit   # volver a entrar para que el grupo docker tenga efecto
    ```
 
