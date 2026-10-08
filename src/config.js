@@ -7,5 +7,5 @@ module.exports = {
     VERSION: version,
     GIT_SHA: process.env.GIT_SHA || 'local',
     // Cambia este mensaje en la demostración en vivo para ver el despliegue automático
-    MESSAGE: 'Hola desde el pipeline CI/CD 🚀 (versión 1)',
+    MESSAGE: 'Hola desde el pipeline CI/CD 🚀 (versión 2)',
 };
