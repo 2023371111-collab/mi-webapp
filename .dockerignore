@@ -1,0 +1,32 @@
+# Dependencias (se instalan dentro de la imagen)
+node_modules
+npm-debug.log*
+
+# Secretos y configuración local
+.env
+.env.*
+*.pem
+*.key
+
+# Datos, logs y reportes
+data
+*.sqlite
+*.log
+logs
+coverage
+
+# Pruebas, CI y documentación (no se necesitan para ejecutar la API)
+tests
+.github
+docs
+reporte
+*.md
+scripts
+
+# Git y editores
+.git
+.gitignore
+.vscode
+.idea
+Dockerfile
+.dockerignore

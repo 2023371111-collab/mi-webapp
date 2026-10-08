@@ -1,0 +1,53 @@
+{
+  "name": "mi-webapp",
+  "version": "1.0.0",
+  "description": "API REST con pipeline CI/CD (GitHub Actions + Docker Hub + AWS EC2)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "jest --verbose --coverage"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "api",
+    "rest",
+    "express",
+    "docker",
+    "ci-cd"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/server.js"
+    ],
+    "coverageReporters": [
+      "text",
+      "text-summary",
+      "lcov",
+      "json-summary"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 70,
+        "functions": 70,
+        "lines": 70,
+        "statements": 70
+      }
+    }
+  }
+}
