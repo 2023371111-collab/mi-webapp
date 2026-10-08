@@ -9,3 +9,6 @@ data/
 *.key
 .DS_Store
 .vscode/
+
+# Reporte (contiene la IP y capturas; se entrega como PDF, no va en el repo)
+reporte/
