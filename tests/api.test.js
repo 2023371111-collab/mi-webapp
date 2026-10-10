@@ -9,7 +9,7 @@ describe('1. GET /api/health', () => {
     test('responde 200 con estado, mensaje y commit', async () => {
         const res = await request(app).get('/api/health');
         expect(res.statusCode).toBe(200);
-        expect(res.body.data.status).toBe('ok 2');
+        expect(res.body.data.status).toBe('ok');
         expect(typeof res.body.data.message).toBe('string');
         expect(res.body.data).toHaveProperty('commit');
     });
