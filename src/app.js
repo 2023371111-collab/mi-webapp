@@ -42,7 +42,7 @@ const findUser = (id) => db.get('SELECT * FROM users WHERE id = ?', [id]);
 app.get('/api/health', async (req, res) => {
     await db.get('SELECT 1');
     send(res, {
-        status: 'ok',
+        status: 'ok 2',
         message: config.MESSAGE,
         version: config.VERSION,
         commit: config.GIT_SHA,
